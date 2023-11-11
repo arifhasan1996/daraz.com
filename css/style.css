@@ -211,10 +211,9 @@ nav .nav-right-menu ul li a i{
 }
 .hero-content.row{
     display: flex;
-    align-items: center;
-    justify-content: space-between;
     height: 350px;
     gap: 20px;
+    flex-wrap: wrap;
 }
 
 
@@ -500,7 +499,7 @@ background: var(--text-grey);
 .flash-col{
     flex-basis: 19%;
     background-color: var(--pure-white-color);
-    padding: 5px 12px;
+    padding: 0px 12px 20px;
     cursor: pointer;
     transition: all 0.3s;
     margin-bottom: 20px;
@@ -583,3 +582,56 @@ background: var(--text-grey);
     color: var(--main-color);
 }
 /*=====================Footer area=====================*/
+
+.footer-section{}
+.footer-section .row{
+    flex-wrap: wrap;
+    gap: 20px;
+}
+.footer-section .footer-col{
+    flex-basis: calc(25% - 15px);
+}
+
+.footer-section .footer-col ul li{
+}
+.footer-section .footer-col ul li h3{
+    font-size: 20px;
+    margin-bottom: 15px;
+    font-family: var(--roboto-ff);
+    font-weight: 400;
+}
+.footer-section .footer-col ul li a{
+    color: var(--text-black);
+    font-size: 14px;
+    display: inline-block;
+    line-height: 22px;
+}
+.footer-col .get-apps{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 15px;
+}
+.footer-col .get-apps ul{
+    flex-basis: 50%;
+}
+.footer-section .footer-col ul li img{
+    width: 100%;
+    margin-bottom: 5px;
+}
+
+.footer-col .social-icons,
+.payments{
+    justify-content: space-between;
+    margin: 25px 0;
+    align-items: center;
+}
+.footer-col .social-icons li a img{
+    width: 35px;
+    height: 35px;
+}
+
+.footer-col .payments li a img{
+    width: 50px;
+}
+
